@@ -26,10 +26,11 @@
 body {
 
     
-    background: linear-gradient( #5F4A8C, #161A1E 40%);
+    background: linear-gradient( #5F4A8C, #0D0D0D 40%);
     height: 100%;
     margin: 0;
-    background-attachment: fixed;
+    background-attachment: fixed
+    
 
 }
 
@@ -46,7 +47,7 @@ body {
 
 .header .navbar .ul1 {
 
-    gap: 12pt;
+    gap: 16pt;
     display: flex;
     align-items: center;
 
@@ -91,7 +92,18 @@ button {
 
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
 
+.parent {
+
+    display: grid;
+    place-items: center;
+}
+
+.main .section .img1 {
+    
+    justify-content: left;
+}
     
