@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, inicial-scale=1.0">
     <meta name="description" content="musica, reproductor, mp3">
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     
     <link rel="icon" href="/Group 15.svg">
 
@@ -41,95 +42,29 @@
 
     <main class="main">
 
-        <section class="section">
+        <section class="section izquierda">
             <h1 class="titulo1">Bienvenido a EpicSound!</h1>
             <p class="desc1">Que deseas escuchar hoy?</p>
-            <ul class="tracklist">
-                <li>
+            <ul class="tracklist" id="tracklist">
+ 
+                <!-- <li>
                     <div>
                         <h3>Blinding lights</h3>
                         <p>The Weeknd</p>
                     </div>
                     <img src="/the weekend 1.svg" class="imagen 1">
-                </li>
-                <li>
-                    <div>
-                        <h3>Blinding lights</h3>
-                        <p>The Weeknd</p>
-                    </div>
-                    <img src="/the weekend 1.svg" class="imagen 1">
-                </li>
-                <li>
-                    <div>
-                        <h3>Blinding lights</h3>
-                        <p>The Weeknd</p>
-                    </div>
-                    <img src="/the weekend 1.svg" class="imagen 1">
-                </li>
-                <li>
-                    <div>
-                        <h3>Blinding lights</h3>
-                        <p>The Weeknd</p>
-                    </div>
-                    <img src="/the weekend 1.svg" class="imagen 1">
-                </li>
-                <li>
-                    <div>
-                        <h3>Blinding lights</h3>
-                        <p>The Weeknd</p>
-                    </div>
-                    <img src="/the weekend 1.svg" class="imagen 1">
-                </li>
-                <li>
-                    <div>
-                        <h3>Blinding lights</h3>
-                        <p>The Weeknd</p>
-                    </div>
-                    <img src="/the weekend 1.svg" class="imagen 1">
-                </li>
-                <li>
-                    <div>
-                        <h3>Blinding lights</h3>
-                        <p>The Weeknd</p>
-                    </div>
-                    <img src="/the weekend 1.svg" class="imagen 1">
-                </li>
-                <li>
-                    <div>
-                        <h3>Blinding lights</h3>
-                        <p>The Weeknd</p>
-                    </div>
-                    <img src="/the weekend 1.svg" class="imagen 1">
-                </li>
-                <li>
-                    <div>
-                        <h3>Blinding lights</h3>
-                        <p>The Weeknd</p>
-                    </div>
-                    <img src="/the weekend 1.svg" class="imagen 1">
-                </li>
-                <li>
-                    <div>
-                        <h3>Blinding lights</h3>
-                        <p>The Weeknd</p>
-                    </div>
-                    <img src="/the weekend 1.svg" class="imagen 1">
-                </li>
-                <li>
-                    <div>
-                        <h3>Blinding lights</h3>
-                        <p>The Weeknd</p>
-                    </div>
-                    <img src="/the weekend 1.svg" class="imagen 1">
-                </li>
-    
+                </li> -->
+
             </ul>
         </section>
 
-        <section class="section">
-
-           <img src="/the weekend 1.svg" alt="">
-           <audio src="" controls></audio>
+        <section class="section derecho"> 
+        
+            <img id="current-song-image" src="">
+           <h4 id="current-song-title">Titulo</h4>
+           <p id="current-song-author">autor</p>
+           <audio id="current-song-audio" src=""controls autoplay></audio>
+           
            
         </section>
         <!-- 
