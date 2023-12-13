@@ -29,7 +29,8 @@ body {
     background: linear-gradient( #5F4A8C, #0D0D0D 40%);
     height: 100%;
     margin: 0;
-    background-attachment: fixed
+    background-attachment: fixed;
+    height: 100%;
     
 
 }
@@ -53,38 +54,46 @@ body {
 
 }
 
-.main {
 
+
+.main {
+    display: flex;
     padding: 0 40px;
 }
 
 .main .section {
 
-    display: flex;
-    justify-content: flex-start;
-    gap: 16px;
+    /* justify-content: flex-start; */
+    /* gap: 16px; */
     
-
+/* 
     position: relative;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
-.main .section .titulo1 {
+.main .section h1 {
 
     font-size: 40pt;
     font-weight: bold;
 }
 
-.main .section .desc1 {
+.main .section p {
 
     font-size: 20pt;
     
 }
+.tracklist li {
+    margin: 8pt 0;
+    display: flex;
+    height: 100%;
+}
+
+
 
 button {
 
     background: #161A1E ;
-    padding: 10px, 20px;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 
